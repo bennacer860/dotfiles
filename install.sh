@@ -20,5 +20,10 @@ cd $dir
 echo "...done"
 
 
-
-
+# move any existing dotile and create symlink
+for file in $files; do
+  echo "Move any existing dotfiles from ~ to $olddir"
+  mv ~/.$file ~/dotfiles_old
+  echo "Creating symlink to $file in home directory"
+  ln -s $dir/$file/.$file
+done
