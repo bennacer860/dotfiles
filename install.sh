@@ -7,3 +7,18 @@
 dir    = ~/dotfiles
 olddir = ~/dotfiles_old #we backup the old dotfiles here
 files  = "vimrc tmux.conf"
+
+# create backup  files
+echo "Create Backup files in $olddir"
+mkdir -p $olddir
+echo "...done"
+
+
+# change to dotfile directory
+echo "Changing to the $dir directory"
+cd $dir
+echo "...done"
+
+
+
+
