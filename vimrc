@@ -95,6 +95,9 @@ colorscheme molokai
 " yummy line number
 set nu
 
+" This should provide autocomplete out of the box
+set wildmode=longest,list,full
+set wildmenu
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
