@@ -9,6 +9,7 @@
     ca = commit -am
     co = checkout
     aa = add --all
+    p  = push
 
     # THANK YOU GARRY
     # Fancy logging.
