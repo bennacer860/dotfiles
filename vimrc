@@ -99,6 +99,11 @@ set nu
 set wildmode=longest,list,full
 set wildmenu
 
+" Airlinebar config
+let g:airline_theme='luna'
+let g:airline_powerline_fonts=1
+set laststatus=2
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
