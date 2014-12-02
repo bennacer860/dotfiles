@@ -1,3 +1,4 @@
+" inspired from https://github.com/johnrails/dotfiles/blob/master/.vimrc
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -90,6 +91,10 @@ let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
 colorscheme molokai
+
+" yummy line number
+set nu
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
