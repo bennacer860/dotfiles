@@ -1,5 +1,6 @@
 *.DS_Store
 *.sw[nop]
+*.swp
 .bundle
 .env
 db/*.sqlite3
