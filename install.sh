@@ -44,4 +44,11 @@ vim -E -c BundleInstall -c q
 
 #install color scheme
 mkdir -p ~/.vim/colors
-cp ~/dotfiles/colors/molokai.vim ~/.vim/colors 
+cp ~/dotfiles/colors/molokai.vim ~/.vim/colors
+
+#install zsh
+curl -L http://install.ohmyz.sh | sh
+
+#install rvm
+curl -sSL https://get.rvm.io | bash -s stable --rails
+
