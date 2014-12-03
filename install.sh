@@ -6,7 +6,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old #we backup the old dotfiles here
-files="vimrc tmux.conf gitignore"
+files="vimrc tmux.conf gitignore gitconfig githelpers"
 
 # create backup  files
 echo "Create Backup files in $olddir"
