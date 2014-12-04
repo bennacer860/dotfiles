@@ -8,6 +8,9 @@ dir=~/dotfiles
 olddir=~/dotfiles_old #we backup the old dotfiles here
 files="vimrc tmux.conf gitignore gitconfig githelpers"
 
+#create backup,undo folder for vim
+mkdir ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo
+
 # create backup  files
 echo "Create Backup files in $olddir"
 mkdir -p $olddir
