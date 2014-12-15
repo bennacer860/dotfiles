@@ -6,7 +6,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old #we backup the old dotfiles here
-files="vimrc tmux.conf gitignore gitconfig githelpers"
+files="git-flow-completion.zsh vimrc tmux.conf gitignore gitconfig githelpers"
 
 #create backup,undo folder for vim
 mkdir ~/.vim/.backup ~/.vim/.swp ~/.vim/.undo

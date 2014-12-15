@@ -10,6 +10,7 @@
     co = checkout
     aa = add --all
     p  = push
+    b  = branch
 
     # THANK YOU GARRY
     # Fancy logging.
@@ -30,4 +31,7 @@
 [merge]
     tool = vimdiff
 
-
+[github]
+    user = bennacer860
+[core]
+	editor = /usr/bin/vim
