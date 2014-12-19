@@ -62,8 +62,7 @@ Bundle 'danro/rename.vim'
 
 Bundle 'nono/vim-handlebars'
 
-set grepprg=ack-grep " Set ACK as a default grep
-set tags=./tags; " Set tags directory
+set tags=./ctags; " Set tags directory
 set autoindent " Auto indention should be on
 
 filetype plugin indent on
@@ -122,3 +121,19 @@ set undodir=~/.vim/.undo//
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//"
 
+" silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+let mapleader=","
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
