@@ -11,7 +11,8 @@
     aa = add --all
     p  = push
     b  = branch
-
+    c  = commit	
+    d  = diff
     # THANK YOU GARRY
     # Fancy logging.
     #   h = head
@@ -34,4 +35,6 @@
 [github]
     user = bennacer860
 [core]
-	editor = /usr/bin/vim
+	editor = vim
+[push]
+	default = matching
