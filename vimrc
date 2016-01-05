@@ -142,3 +142,11 @@ autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 map <silent> <LocalLeader>ws :highlight clear ExtraWhitespace<CR>
+
+"" Enable folding based on syntax rules
+set foldmethod=syntax
+"" Adjust the highlighting
+highlight Folded guibg=grey guifg=blue
+
+"" Map folding to Spacebar
+" nnoremap  za
