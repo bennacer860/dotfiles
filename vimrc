@@ -35,6 +35,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
 " " Vim Ruby
 Bundle 'vim-ruby/vim-ruby'
+" " Vim angular
+Bundle 'burnettk/vim-angular'
 
 " surround your code :)
 Bundle 'tpope/vim-surround'
