@@ -61,6 +61,10 @@ Bundle 'danro/rename.vim'
 
 Bundle 'nono/vim-handlebars'
 
+" " share lines in github
+Bundle 'ruanyl/vim-gh-line'
+
+
 set tags=./ctags; " Set tags directory
 set autoindent " Auto indention should be on
 
