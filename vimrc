@@ -63,7 +63,12 @@ Bundle 'nono/vim-handlebars'
 
 " " share lines in github
 Bundle 'ruanyl/vim-gh-line'
+" Test
+Bundle 'janko-m/vim-test'
 
+Bundle 'leafgarland/typescript-vim'
+
+Bundle 'rking/ag.vim'
 
 set tags=./ctags; " Set tags directory
 set autoindent " Auto indention should be on
@@ -156,3 +161,9 @@ highlight Folded guibg=grey guifg=blue
 
 "" Map folding to Spacebar
 " nnoremap  za
+" Test plugin
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+
